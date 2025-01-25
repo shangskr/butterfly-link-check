@@ -6,7 +6,7 @@ import json
 
 # 文件路径
 yaml_file_path = 'link.yml'
-output_json_path = 'check_links.json'
+output_json_path = os.path.join('public', 'check_links.json')  # 修改为 public 目录
 manual_check_file = 'manual_check.json'  # 额外的手动检查文件
 
 # 获取API的key（假设你已经设置了环境变量 API_KEY）
