@@ -26,6 +26,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       # 4. 运行链接检测脚本
       - name: Run link checker script
         run: python check.py
@@ -35,10 +36,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       # 6. 添加生成的 JSON 文件到 Git
       - name: Commit and push changes if json file is updated
         run: |
-          git add check_links.json
+          git add public/check_links.json
           git commit -m "Update check_links.json after link check" || echo "No changes to commit"
           git push
         env:
