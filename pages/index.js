@@ -1,17 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const EditFile = () => {
   const [fileContent, setFileContent] = useState("");
   const [sha, setSha] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-  const [selectedFile, setSelectedFile] = useState("link.yml"); // 默认选择 link.yml
-  const [password, setPassword] = useState(""); // 用于存储用户输入的密码
-  const [isAuthenticated, setIsAuthenticated] = useState(false); // 用户是否认证通过
-  const [showPasswordPrompt, setShowPasswordPrompt] = useState(true); // 控制密码提示框的显示
-  const [passwordError, setPasswordError] = useState(""); // 控制密码错误的提示
+  const [selectedFile, setSelectedFile] = useState("link.yml");
+  const [password, setPassword] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [showPasswordPrompt, setShowPasswordPrompt] = useState(true);
+  const [passwordError, setPasswordError] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [currentMatchIndex, setCurrentMatchIndex] = useState(0);
+  const [isDarkMode, setIsDarkMode] = useState(false); // 夜间模式状态
+  const contentRef = useRef(null);
 
-  // 使用NEXT_PUBLIC_COMMIT_PASSWORD来获取密码
-  const correctPassword = process.env.NEXT_PUBLIC_COMMIT_PASSWORD || "your-default-password"; // 默认密码
+  const correctPassword = process.env.NEXT_PUBLIC_COMMIT_PASSWORD || "your-default-password";
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
@@ -20,20 +24,19 @@ const EditFile = () => {
   const handlePasswordSubmit = (e) => {
     e.preventDefault();
     if (password === correctPassword) {
-      setIsAuthenticated(true); // 密码正确，认证通过
-      setShowPasswordPrompt(false); // 隐藏密码提示框
-      setPasswordError(""); // 清空错误信息
+      setIsAuthenticated(true);
+      setShowPasswordPrompt(false);
+      setPasswordError("");
     } else {
-      setPasswordError("Incorrect password!"); // 设置错误信息
+      setPasswordError("Incorrect password!");
     }
   };
 
-  // Fetch current file content when the page loads or when the selected file changes
   useEffect(() => {
     if (isAuthenticated) {
       const fetchFileContent = async () => {
         setIsLoading(true);
-        const response = await fetch(`/api/getFile?file=${selectedFile}`); // 根据选择的文件获取内容
+        const response = await fetch(`/api/getFile?file=${selectedFile}`);
         const data = await response.json();
 
         if (data.content) {
@@ -47,7 +50,44 @@ const EditFile = () => {
 
       fetchFileContent();
     }
-  }, [selectedFile, isAuthenticated]); // 每次文件选择变化时重新加载文件内容，且只有认证后才触发请求
+  }, [selectedFile, isAuthenticated]);
+
+  useEffect(() => {
+    if (searchTerm) {
+      const regex = new RegExp(searchTerm, "gi");
+      const matches = [];
+      let match;
+      while ((match = regex.exec(fileContent)) !== null) {
+        matches.push(match.index);
+      }
+      setSearchResults(matches);
+    } else {
+      setSearchResults([]);
+    }
+  }, [searchTerm, fileContent]);
+
+  const handleNextMatch = () => {
+    if (searchResults.length > 0) {
+      const nextIndex = (currentMatchIndex + 1) % searchResults.length;
+      setCurrentMatchIndex(nextIndex);
+      contentRef.current.scrollTo({
+        top: searchResults[nextIndex] - 100,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handlePreviousMatch = () => {
+    if (searchResults.length > 0) {
+      const prevIndex =
+        (currentMatchIndex - 1 + searchResults.length) % searchResults.length;
+      setCurrentMatchIndex(prevIndex);
+      contentRef.current.scrollTo({
+        top: searchResults[prevIndex] - 100,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const handleChange = (e) => {
     setFileContent(e.target.value);
@@ -74,10 +114,13 @@ const EditFile = () => {
     setIsLoading(false);
   };
 
-  // 如果用户没有通过密码验证，显示密码提示框
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   if (showPasswordPrompt) {
     return (
-      <div className="container">
+      <div className={`container ${isDarkMode ? "dark" : ""}`}>
         <h1>Enter Password to Access Edit Page</h1>
         <form onSubmit={handlePasswordSubmit} className="form-container">
           <input
@@ -95,16 +138,34 @@ const EditFile = () => {
   }
 
   return (
-    <div className="container">
+    <div className={`container ${isDarkMode ? "dark" : ""}`}>
       <h1>Edit {selectedFile}</h1>
+      <button onClick={toggleDarkMode} className="dark-mode-toggle">
+        {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      </button>
       <div>
-        {/* 文件选择器 */}
         <label>Select file: </label>
         <select value={selectedFile} onChange={(e) => setSelectedFile(e.target.value)}>
           <option value="link.yml">link.yml</option>
           <option value="manual_check.json">manual_check.json</option>
         </select>
       </div>
+      <div>
+        <label>Search: </label>
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder="Search in file"
+        />
+        {searchResults.length > 0 && (
+          <div>
+            <button onClick={handlePreviousMatch}>Previous</button>
+            <button onClick={handleNextMatch}>Next</button>
+          </div>
+        )}
+      </div>
+
       {isLoading ? (
         <div className="loading">Saving changes, please wait...</div>
       ) : (
@@ -116,6 +177,7 @@ const EditFile = () => {
             cols="60"
             className="textarea"
             placeholder={`Edit your ${selectedFile} content here...`}
+            ref={contentRef}
           />
           <button type="submit" className="submit-btn">Save Changes</button>
         </form>
