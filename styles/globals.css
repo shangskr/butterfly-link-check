@@ -27,6 +27,7 @@ body {
   align-items: center;
   height: 100vh;
   padding: 20px;
+  transition: background-color 0.3s ease;
 }
 
 /* Container */
@@ -36,8 +37,15 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 30px;
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 100%;
   text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Container in dark mode */
+.container.dark {
+  background-color: #333;
+  color: #f4f7fc;
 }
 
 /* Header */
@@ -45,6 +53,12 @@ h1 {
   font-size: 2rem;
   color: #444;
   margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+/* Header in dark mode */
+.container.dark h1 {
+  color: #f4f7fc;
 }
 
 /* Loading state */
@@ -67,20 +81,46 @@ h1 {
 /* Textarea */
 .textarea {
   width: 100%;
-  max-width: 700px;
+  max-width: 100%;
   height: 300px;
   padding: var(--input-padding);
   font-size: var(--font-size);
   border-radius: var(--border-radius);
   border: 1px solid #ddd;
-  resize: vertical;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: both;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.textarea:focus {
-  border-color: var(--primary-color);
+/* Textarea in dark mode */
+.container.dark .textarea {
+  background-color: #333;
+  color: #f4f7fc;
+  border: 1px solid #555;
+}
+
+/* Textarea focus in dark mode */
+.container.dark .textarea:focus {
+  border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  outline: none;
+}
+
+/* Search box */
+.search-box {
+  width: 100%;
+  max-width: 700px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Search box in dark mode */
+.container.dark .search-box {
+  background-color: #444;
+  color: #f4f7fc;
+  border-color: #555;
 }
 
 /* Submit button */
@@ -95,12 +135,57 @@ h1 {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Submit button hover */
 .submit-btn:hover {
   background-color: var(--button-hover-color);
 }
 
+/* Submit button active */
 .submit-btn:active {
   transform: scale(0.98);
+}
+
+/* Dark mode button */
+.container.dark .submit-btn {
+  background-color: #444;
+  color: #f4f7fc;
+  border-color: #555;
+}
+
+/* Dark mode button hover */
+.container.dark .submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode toggle button hover */
+.dark-mode-toggle:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Dark mode toggle button in dark mode */
+.container.dark .dark-mode-toggle {
+  background-color: #444;
+  color: #f4f7fc;
+  border-color: #555;
+}
+
+/* Dark mode toggle button hover in dark mode */
+.container.dark .dark-mode-toggle:hover {
+  background-color: #0056b3;
+  color: white;
 }
 
 /* Responsive Design */
@@ -113,13 +198,19 @@ h1 {
 
   .textarea {
     width: 100%;
-    height: 250px;
+    height: auto;
+    min-height: 150px;
     padding: 12px;
     font-size: 0.9rem;
   }
 
   .submit-btn {
     padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .dark-mode-toggle {
+    padding: 8px 16px;
     font-size: 1rem;
   }
 }
@@ -130,12 +221,18 @@ h1 {
   }
 
   .textarea {
-    height: 200px;
+    height: auto;
+    min-height: 150px;
     font-size: 0.8rem;
   }
 
   .submit-btn {
     padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .dark-mode-toggle {
+    padding: 6px 12px;
     font-size: 0.9rem;
   }
 }
