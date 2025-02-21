@@ -11,6 +11,13 @@
                 "status": "正常"
             },
             {
+                "name": "Tianli",
+                "link": "https://blog.tianli0.top",
+                "avatar": "https://q2.qlogo.cn/headimg_dl?dst_uin=507249007&spec=640",
+                "descr": "自知之明是最可贵的知识！",
+                "status": "正常"
+            },
+            {
                 "name": "汐塔魔法屋",
                 "link": "https://blog.storical.space/",
                 "avatar": "https://blog.storical.space/images/icon.png",
@@ -53,6 +60,13 @@
                 "status": "正常"
             },
             {
+                "name": "Akilarの糖果屋",
+                "link": "https://akilar.top/",
+                "avatar": "https://npm.elemecdn.com/akilar-friends@latest/avatar/akilar.top.jpg",
+                "descr": "欢迎光临糖果屋",
+                "status": "正常"
+            },
+            {
                 "name": "咖啡豆子coffee的小站",
                 "link": "https://blog.kfdzcoffee.cn",
                 "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
@@ -75,9 +89,37 @@
             },
             {
                 "name": "东方月初",
-                "link": "https://solitude.200038.xyz/",
+                "link": "https://solitude.200038.xyz",
                 "avatar": "https://serv.200038.xyz/2024/09/19/040857.webp",
                 "descr": "分享有趣但又无聊的东西。",
+                "status": "正常"
+            },
+            {
+                "name": "山岳库博",
+                "link": "https://kmar.top",
+                "avatar": "https://npm.elemecdn.com/@kmar/fonts@1/avatar/own.png",
+                "descr": "开发学习启发性二刺螈",
+                "status": "正常"
+            },
+            {
+                "name": "张洪Heo",
+                "link": "https://blog.zhheo.com/",
+                "avatar": "https://bu.dusays.com/2022/12/28/63ac2812183aa.png",
+                "descr": "分享设计与科技生活",
+                "status": "正常"
+            },
+            {
+                "name": "安知鱼",
+                "link": "https://blog.anheyu.com/",
+                "avatar": "https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg",
+                "descr": "生活明朗，万物可爱",
+                "status": "不可访问"
+            },
+            {
+                "name": "Ariasakaの小窝",
+                "link": "https://blog.yaria.top",
+                "avatar": "https://bu.dusays.com/2024/12/05/67517bcf104da.png",
+                "descr": "人有悲欢离合 月有阴晴圆缺",
                 "status": "正常"
             }
         ]
@@ -89,16 +131,29 @@
             {
                 "name": "Hexo",
                 "link": "https://hexo.io/",
-                "avatar": "https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg",
+                "avatar": "https://imgse.koxiuqiu.cc/imgse/u/19/2025/02/21/67b827616e648.png",
                 "descr": "快速、简单且强大的网站框架",
                 "status": "正常"
             },
             {
                 "name": "Butterfly",
                 "link": "https://butterfly.js.org/",
-                "avatar": "https://cdn.staticaly.com/gh/SinzMise/MYPictures@master/20230116/more-butterfly-demo-avatar.70domgxf4rs0.webp",
+                "avatar": "https://imgse.koxiuqiu.cc/imgse/u/19/2025/02/21/67b826a36b2d7.png",
                 "descr": "A Simple and Card UI Design theme for Hexo",
                 "status": "正常"
+            }
+        ]
+    },
+    {
+        "class_name": "友链异常区域",
+        "class_desc": "会手动检查",
+        "link_list": [
+            {
+                "name": "安知鱼",
+                "link": "https://blog.anheyu.com/",
+                "avatar": "https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg",
+                "descr": "生活明朗，万物可爱",
+                "status": "不可访问"
             }
         ]
     }
