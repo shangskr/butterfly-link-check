@@ -121,6 +121,27 @@
                 "avatar": "https://bu.dusays.com/2024/12/05/67517bcf104da.png",
                 "descr": "人有悲欢离合 月有阴晴圆缺",
                 "status": "正常"
+            },
+            {
+                "name": "星の野",
+                "link": "https://blog.byer.top",
+                "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
+                "descr": "我自是年少，韶华倾负",
+                "status": "不可访问"
+            },
+            {
+                "name": "葱苓语畔",
+                "link": "https://blog.ciraos.top",
+                "avatar": "https://blog.ciraos.top/avatar.avif",
+                "descr": "Don't worry, be happy.",
+                "status": "正常"
+            },
+            {
+                "name": "Leonus",
+                "link": "https://blog.leonus.cn/",
+                "avatar": "https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5",
+                "descr": "进一寸有进一寸的欢喜。",
+                "status": "正常"
             }
         ]
     },
@@ -141,6 +162,19 @@
                 "avatar": "https://imgse.koxiuqiu.cc/imgse/u/19/2025/02/21/67b826a36b2d7.png",
                 "descr": "A Simple and Card UI Design theme for Hexo",
                 "status": "正常"
+            }
+        ]
+    },
+    {
+        "class_name": "友链异常区域",
+        "class_desc": "会手动检查",
+        "link_list": [
+            {
+                "name": "星の野",
+                "link": "https://blog.byer.top",
+                "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
+                "descr": "我自是年少，韶华倾负",
+                "status": "不可访问"
             }
         ]
     }
