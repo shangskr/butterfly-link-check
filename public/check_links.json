@@ -113,7 +113,7 @@
                 "link": "https://blog.anheyu.com/",
                 "avatar": "https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg",
                 "descr": "生活明朗，万物可爱",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "Ariasakaの小窝",
@@ -134,7 +134,7 @@
                 "link": "https://blog.ciraos.top",
                 "avatar": "https://blog.ciraos.top/avatar.avif",
                 "descr": "Don't worry, be happy.",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "Leonus",
@@ -170,10 +170,10 @@
         "class_desc": "会手动检查",
         "link_list": [
             {
-                "name": "葱苓语畔",
-                "link": "https://blog.ciraos.top",
-                "avatar": "https://blog.ciraos.top/avatar.avif",
-                "descr": "Don't worry, be happy.",
+                "name": "安知鱼",
+                "link": "https://blog.anheyu.com/",
+                "avatar": "https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg",
+                "descr": "生活明朗，万物可爱",
                 "status": "不可访问"
             }
         ]
