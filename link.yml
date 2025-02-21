@@ -10,7 +10,7 @@
         avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=507249007&spec=640
         descr: 自知之明是最可贵的知识！
       - name: 汐塔魔法屋
-        link: https://blog.storical.space/
+        link: https://blog.storical.space
         avatar: https://blog.storical.space/images/icon.png
         descr: 种下一颗有故事的种子，让它带着魔法和奇迹生根发芽
       - name: HiPeach
@@ -22,19 +22,19 @@
         avatar: https://ffbf.top/upload/logo3.jpeg
         descr: 不服就是不服
       - name: 落落のBlog
-        link: https://www.whaleluo.top/
+        link: https://www.whaleluo.top
         avatar: http://q.qlogo.cn/headimg_dl?dst_uin=2734184475&spec=640&img_type=jpg
         descr: 于无常处知有情,于有情处知众生.
       - name: 清羽飞扬
-        link: https://blog.liushen.fun/
+        link: https://blog.liushen.fun
         avatar: https://blog.liushen.fun/info/avatar.ico
         descr: 柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜             
       - name: 小何
-        link: https://blog.dreamerstar.top/
+        link: https://blog.dreamerstar.top
         avatar: https://jsd.nmmsl.top/gh/dreamerhe114514/baimgapi@main/image/tx.png
         descr: 追梦小何，梦必追逐！一个无名小卒的个人博客
       - name: Akilarの糖果屋
-        link: https://akilar.top/
+        link: https://akilar.top
         avatar: https://npm.elemecdn.com/akilar-friends@latest/avatar/akilar.top.jpg
         descr: 欢迎光临糖果屋
       - name: 咖啡豆子coffee的小站
@@ -58,11 +58,11 @@
         avatar: https://npm.elemecdn.com/@kmar/fonts@1/avatar/own.png
         descr: 开发学习启发性二刺螈
       - name: 张洪Heo
-        link: https://blog.zhheo.com/
+        link: https://blog.zhheo.com
         avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
         descr: 分享设计与科技生活
       - name: 安知鱼
-        link: https://blog.anheyu.com/
+        link: https://blog.anheyu.com
         avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
         descr: 生活明朗，万物可爱
       - name: Ariasakaの小窝
@@ -78,17 +78,17 @@
         avatar: https://blog.ciraos.top/avatar.avif
         descr: Don't worry, be happy.
       - name: Leonus
-        link: https://blog.leonus.cn/
+        link: https://blog.leonus.cn
         avatar: https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5
         descr: 进一寸有进一寸的欢喜。
 - class_name: 特别推荐
   class_desc: 对我有用的博客及网站
   link_list:
       - name: Hexo
-        link: https://hexo.io/
+        link: https://hexo.io
         avatar: https://imgse.koxiuqiu.cc/imgse/u/19/2025/02/21/67b827616e648.png
         descr: 快速、简单且强大的网站框架
       - name: Butterfly
-        link: https://butterfly.js.org/
+        link: https://butterfly.js.org
         avatar: https://imgse.koxiuqiu.cc/imgse/u/19/2025/02/21/67b826a36b2d7.png
         descr: A Simple and Card UI Design theme for Hexo
