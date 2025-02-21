@@ -127,14 +127,14 @@
                 "link": "https://blog.byer.top",
                 "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
                 "descr": "我自是年少，韶华倾负",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "葱苓语畔",
                 "link": "https://blog.ciraos.top",
                 "avatar": "https://blog.ciraos.top/avatar.avif",
                 "descr": "Don't worry, be happy.",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "Leonus",
@@ -170,10 +170,10 @@
         "class_desc": "会手动检查",
         "link_list": [
             {
-                "name": "星の野",
-                "link": "https://blog.byer.top",
-                "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
-                "descr": "我自是年少，韶华倾负",
+                "name": "葱苓语畔",
+                "link": "https://blog.ciraos.top",
+                "avatar": "https://blog.ciraos.top/avatar.avif",
+                "descr": "Don't worry, be happy.",
                 "status": "不可访问"
             }
         ]
