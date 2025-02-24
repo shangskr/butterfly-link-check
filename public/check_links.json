@@ -8,7 +8,7 @@
                 "link": "https://www.qcqx.cn",
                 "avatar": "https://www.qcqx.cn/head.webp",
                 "descr": "漫天倾尘,风中轻笑",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "Tianli",
@@ -71,7 +71,7 @@
                 "link": "https://blog.kfdzcoffee.cn",
                 "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
                 "descr": "所有奇迹的始发点",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "Adil",
@@ -183,20 +183,6 @@
         "class_name": "友链异常区域",
         "class_desc": "会手动检查",
         "link_list": [
-            {
-                "name": "轻笑Chuckle",
-                "link": "https://www.qcqx.cn",
-                "avatar": "https://www.qcqx.cn/head.webp",
-                "descr": "漫天倾尘,风中轻笑",
-                "status": "不可访问"
-            },
-            {
-                "name": "咖啡豆子coffee的小站",
-                "link": "https://blog.kfdzcoffee.cn",
-                "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
-                "descr": "所有奇迹的始发点",
-                "status": "不可访问"
-            },
             {
                 "name": "星の野",
                 "link": "https://blog.byer.top",
