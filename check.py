@@ -3,6 +3,7 @@ import requests
 import concurrent.futures
 import os
 import json
+from time import sleep
 
 # 文件路径
 yaml_file_path = 'link.yml'
@@ -31,19 +32,26 @@ inaccessible_links = set()  # 使用 set 避免重复链接
 # 检查链接是否可访问的函数
 def check_link_accessibility(link):
     headers = {"User-Agent": user_agent}
-    try:
-        response = requests.head(link, headers=headers, timeout=5)
-        if response.status_code != 200:
-            inaccessible_links.add(link)
-    except requests.RequestException:
-        inaccessible_links.add(link)
+    for _ in range(3):  # 尝试3次
+        try:
+            # 优先使用 HEAD 请求
+            response = requests.head(link, headers=headers, timeout=10)
+            # 如果HEAD请求失败，再尝试使用GET请求
+            if response.status_code != 200:
+                response = requests.get(link, headers=headers, timeout=10)
+                if response.status_code != 200:
+                    continue  # 仍然无法访问，重试
+            return  # 如果访问成功，直接返回
+        except requests.RequestException:
+            sleep(2)  # 暂停2秒后重试
+    inaccessible_links.add(link)
 
 # 使用API再次检测链接
 def api_check_link(link):
     url = f'https://api.nsmao.net/api/web/query?key={api_key}'
     headers = {"User-Agent": user_agent}
     try:
-        response = requests.get(url, headers=headers, params={'link': link}, timeout=5)
+        response = requests.get(url, headers=headers, params={'link': link}, timeout=10)
         result = response.json()
         # 根据返回结果决定是否仍然认为该链接不可访问
         if result.get('status') != 'ok':
