@@ -36,7 +36,7 @@
                 "link": "https://ffbf.top",
                 "avatar": "https://ffbf.top/upload/logo3.jpeg",
                 "descr": "不服就是不服",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "落落のBlog",
@@ -141,7 +141,7 @@
                 "link": "https://blog.leonus.cn",
                 "avatar": "https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5",
                 "descr": "进一寸有进一寸的欢喜。",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "陆小启Kairo",
@@ -184,10 +184,10 @@
         "class_desc": "会手动检查",
         "link_list": [
             {
-                "name": "福福不服",
-                "link": "https://ffbf.top",
-                "avatar": "https://ffbf.top/upload/logo3.jpeg",
-                "descr": "不服就是不服",
+                "name": "Leonus",
+                "link": "https://blog.leonus.cn",
+                "avatar": "https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5",
+                "descr": "进一寸有进一寸的欢喜。",
                 "status": "不可访问"
             }
         ]
