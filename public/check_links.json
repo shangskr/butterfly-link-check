@@ -8,7 +8,7 @@
                 "link": "https://www.qcqx.cn",
                 "avatar": "https://www.qcqx.cn/head.webp",
                 "descr": "漫天倾尘,风中轻笑",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "Tianli",
@@ -71,7 +71,7 @@
                 "link": "https://blog.kfdzcoffee.cn",
                 "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
                 "descr": "所有奇迹的始发点",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "Adil",
@@ -127,7 +127,7 @@
                 "link": "https://blog.byer.top",
                 "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
                 "descr": "我自是年少，韶华倾负",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "葱苓语畔",
@@ -141,7 +141,7 @@
                 "link": "https://blog.leonus.cn",
                 "avatar": "https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5",
                 "descr": "进一寸有进一寸的欢喜。",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "陆小启Kairo",
@@ -184,10 +184,24 @@
         "class_desc": "会手动检查",
         "link_list": [
             {
-                "name": "Leonus",
-                "link": "https://blog.leonus.cn",
-                "avatar": "https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5",
-                "descr": "进一寸有进一寸的欢喜。",
+                "name": "轻笑Chuckle",
+                "link": "https://www.qcqx.cn",
+                "avatar": "https://www.qcqx.cn/head.webp",
+                "descr": "漫天倾尘,风中轻笑",
+                "status": "不可访问"
+            },
+            {
+                "name": "咖啡豆子coffee的小站",
+                "link": "https://blog.kfdzcoffee.cn",
+                "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
+                "descr": "所有奇迹的始发点",
+                "status": "不可访问"
+            },
+            {
+                "name": "星の野",
+                "link": "https://blog.byer.top",
+                "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
+                "descr": "我自是年少，韶华倾负",
                 "status": "不可访问"
             }
         ]
