@@ -6,6 +6,7 @@
 
 - 自动检测友链的访问状态，无法访问的链接将被标记为不可用。
 - 使用 **Python** 库和 **奶思猫 API** 进行检测，误差较小，但可以通过修改 `manual_check.json` 来手动调整检测结果。
+- 新增Cloudflare Worker API 的 URL，用于检测链接的可用性。
 - 支持通过网页界面修改配置，避免手动编辑 GitHub 文件。
 - 检测结果生成的 JSON 文件可以通过 Vercel 部署，提供给 Butterfly 友链设置页面。
 - 适配夜间模式，文本框支持拖拽放大缩小（双端都可）。
@@ -19,6 +20,8 @@
 
 - **PAT_TOKEN**：GitHub 自建一个 Personal Access Token，授予相关权限，保存好该 token，稍后在 Vercel 中使用。
 - **API_KEY**：在奶思猫站点获取的 API Key。
+
+然后，check.py中的第17行的cf_worker_url可以换成自己的url(复制根目录cf-workers文件中的内容部署到cf-worker就可以)，不需要绑定域名，因为action是国外环境~也可以不用修改直接用我的！
 
 ### 2. 配置 Vercel 环境变量
 
