@@ -127,7 +127,7 @@
                 "link": "https://blog.byer.top",
                 "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
                 "descr": "我自是年少，韶华倾负",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "葱苓语畔",
@@ -176,19 +176,6 @@
                 "avatar": "https://imgse.koxiuqiu.cc/imgse/u/19/2025/02/21/67b826a36b2d7.png",
                 "descr": "A Simple and Card UI Design theme for Hexo",
                 "status": "正常"
-            }
-        ]
-    },
-    {
-        "class_name": "友链异常区域",
-        "class_desc": "会手动检查",
-        "link_list": [
-            {
-                "name": "星の野",
-                "link": "https://blog.byer.top",
-                "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
-                "descr": "我自是年少，韶华倾负",
-                "status": "不可访问"
             }
         ]
     }
