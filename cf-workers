@@ -1,0 +1,40 @@
+// Cloudflare Worker code to check website accessibility
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request))
+})
+
+async function handleRequest(request) {
+  const url = new URL(request.url)
+
+  // 获取用户传递的 URL 参数
+  const targetUrl = url.searchParams.get('url')
+
+  // 如果没有传递 URL 参数，返回 400 错误
+  if (!targetUrl) {
+    return new Response('Missing url parameter', { status: 400 })
+  }
+
+  try {
+    // 尝试访问目标网站
+    const response = await fetch(targetUrl, {
+      method: 'HEAD', // 只发送请求头，不下载整个内容
+      timeout: 5000, // 设置请求超时为 5 秒
+    })
+
+    // 检查返回的状态码
+    if (response.ok) {
+      return new Response(JSON.stringify({ status: 'up' }), {
+        headers: { 'Content-Type': 'application/json' }
+      })
+    } else {
+      return new Response(JSON.stringify({ status: 'down' }), {
+        headers: { 'Content-Type': 'application/json' }
+      })
+    }
+  } catch (error) {
+    // 捕获任何错误，如网络不可达等
+    return new Response(JSON.stringify({ status: 'down', error: error.message }), {
+      headers: { 'Content-Type': 'application/json' }
+    })
+  }
+}
