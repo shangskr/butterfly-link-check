@@ -71,7 +71,7 @@
                 "link": "https://blog.kfdzcoffee.cn",
                 "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
                 "descr": "所有奇迹的始发点",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "Adil",
@@ -156,6 +156,13 @@
                 "avatar": "https://www.koxiuqiu.cc/img/avatar/avatar.png",
                 "descr": "一定会和喜欢的人在夏日夜晚牵手慢步",
                 "status": "正常"
+            },
+            {
+                "name": "bbb-lsy07",
+                "link": "https://i.bbb-lsy07.sbs",
+                "avatar": "https://i.bbb-lsy07.sbs/upload/quality_restoration_20250211145207618.JPG",
+                "descr": "科技激荡人文，洞见智慧本真。",
+                "status": "正常"
             }
         ]
     },
@@ -176,6 +183,19 @@
                 "avatar": "https://imgse.koxiuqiu.cc/imgse/u/19/2025/02/21/67b826a36b2d7.png",
                 "descr": "A Simple and Card UI Design theme for Hexo",
                 "status": "正常"
+            }
+        ]
+    },
+    {
+        "class_name": "友链异常区域",
+        "class_desc": "会手动检查",
+        "link_list": [
+            {
+                "name": "咖啡豆子coffee的小站",
+                "link": "https://blog.kfdzcoffee.cn",
+                "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
+                "descr": "所有奇迹的始发点",
+                "status": "不可访问"
             }
         ]
     }
