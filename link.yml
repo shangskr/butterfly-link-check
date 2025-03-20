@@ -97,6 +97,10 @@
         link: https://www.sxiaohe.top
         avatar: https://www.sxiaohe.top/img/avatar.avif
         descr: 随风飘起 如同浮云
+      - name: 青稚の空间
+        link: https://blog.linux-qitong.top
+        avatar: https://blog.linux-qitong.top/img/avatar.webp
+        descr: 越努力，越幸运.
 - class_name: 特别推荐
   class_desc: 对我有用的博客及网站
   link_list:
