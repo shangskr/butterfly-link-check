@@ -71,7 +71,7 @@
                 "link": "https://blog.kfdzcoffee.cn",
                 "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
                 "descr": "所有奇迹的始发点",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "Adil",
@@ -127,7 +127,7 @@
                 "link": "https://blog.byer.top",
                 "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
                 "descr": "我自是年少，韶华倾负",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "葱苓语畔",
@@ -169,7 +169,7 @@
                 "link": "https://www.sxiaohe.top",
                 "avatar": "https://www.sxiaohe.top/img/avatar.avif",
                 "descr": "随风飘起 如同浮云",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "青稚の空间",
@@ -205,10 +205,17 @@
         "class_desc": "会手动检查",
         "link_list": [
             {
-                "name": "咖啡豆子coffee的小站",
-                "link": "https://blog.kfdzcoffee.cn",
-                "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
-                "descr": "所有奇迹的始发点",
+                "name": "星の野",
+                "link": "https://blog.byer.top",
+                "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
+                "descr": "我自是年少，韶华倾负",
+                "status": "不可访问"
+            },
+            {
+                "name": "苏晓河",
+                "link": "https://www.sxiaohe.top",
+                "avatar": "https://www.sxiaohe.top/img/avatar.avif",
+                "descr": "随风飘起 如同浮云",
                 "status": "不可访问"
             }
         ]
