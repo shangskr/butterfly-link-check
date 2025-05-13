@@ -71,7 +71,7 @@
                 "link": "https://blog.kfdzcoffee.cn",
                 "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
                 "descr": "所有奇迹的始发点",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "Adil",
@@ -127,14 +127,14 @@
                 "link": "https://blog.byer.top",
                 "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
                 "descr": "我自是年少，韶华倾负",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "葱苓语畔",
                 "link": "https://blog.ciraos.top",
                 "avatar": "https://blog.ciraos.top/avatar.avif",
                 "descr": "Don't worry, be happy.",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "Leonus",
@@ -184,6 +184,13 @@
                 "avatar": "https://api.bleaz.top/img/links/logo.jpg",
                 "descr": "不畏过往，不惧将来。",
                 "status": "正常"
+            },
+            {
+                "name": "Crosery",
+                "link": "https://www.crosery.cn",
+                "avatar": "https://www.crosery.cn/img/face.webp",
+                "descr": "唯有那份炫目未曾忘却",
+                "status": "正常"
             }
         ]
     },
@@ -212,17 +219,10 @@
         "class_desc": "会手动检查",
         "link_list": [
             {
-                "name": "咖啡豆子coffee的小站",
-                "link": "https://blog.kfdzcoffee.cn",
-                "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
-                "descr": "所有奇迹的始发点",
-                "status": "不可访问"
-            },
-            {
-                "name": "星の野",
-                "link": "https://blog.byer.top",
-                "avatar": "https://bu.dusays.com/2023/10/01/6519291503349.jpg",
-                "descr": "我自是年少，韶华倾负",
+                "name": "葱苓语畔",
+                "link": "https://blog.ciraos.top",
+                "avatar": "https://blog.ciraos.top/avatar.avif",
+                "descr": "Don't worry, be happy.",
                 "status": "不可访问"
             },
             {
