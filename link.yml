@@ -105,6 +105,10 @@
         link: https://blog.bleaz.net/
         avatar: https://api.bleaz.top/img/links/logo.jpg
         descr: 不畏过往，不惧将来。
+      - name: Crosery
+        link: https://www.crosery.cn
+        avatar: https://www.crosery.cn/img/face.webp
+        descr: 唯有那份炫目未曾忘却
 - class_name: 特别推荐
   class_desc: 对我有用的博客及网站
   link_list:
