@@ -134,7 +134,7 @@
                 "link": "https://blog.ciraos.top",
                 "avatar": "https://blog.ciraos.top/avatar.avif",
                 "descr": "Don't worry, be happy.",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "Leonus",
@@ -218,13 +218,6 @@
         "class_name": "友链异常区域",
         "class_desc": "会手动检查",
         "link_list": [
-            {
-                "name": "葱苓语畔",
-                "link": "https://blog.ciraos.top",
-                "avatar": "https://blog.ciraos.top/avatar.avif",
-                "descr": "Don't worry, be happy.",
-                "status": "不可访问"
-            },
             {
                 "name": "苏晓河",
                 "link": "https://www.sxiaohe.top",
