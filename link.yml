@@ -93,22 +93,26 @@
         link: https://i.bbb-lsy07.sbs
         avatar: https://i.bbb-lsy07.sbs/upload/quality_restoration_20250211145207618.JPG
         descr: 科技激荡人文，洞见智慧本真。
-      - name: 苏晓河
-        link: https://www.sxiaohe.top
-        avatar: https://www.sxiaohe.top/img/avatar.avif
+      - name: 莫言小筑
+        link: https://www.myxz.top
+        avatar: https://www.myxz.top/img/avatar.avif
         descr: 随风飘起 如同浮云
       - name: 青稚の空间
         link: https://blog.linux-qitong.top
         avatar: https://blog.linux-qitong.top/img/avatar.webp
         descr: 越努力，越幸运.
       - name: Bleaz’s Blog
-        link: https://blog.bleaz.net/
+        link: https://blog.bleaz.net
         avatar: https://api.bleaz.top/img/links/logo.jpg
         descr: 不畏过往，不惧将来。
       - name: Crosery
         link: https://www.crosery.cn
         avatar: https://www.crosery.cn/img/face.webp
         descr: 唯有那份炫目未曾忘却
+      - name: vegecaiBlog
+        link: https://blog.vegecai.moe
+        avatar: https://img.vegecai.moe/me.jpg
+        descr: 守岁花开，季季不同。
 - class_name: 特别推荐
   class_desc: 对我有用的博客及网站
   link_list:
