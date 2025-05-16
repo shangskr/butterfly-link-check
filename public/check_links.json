@@ -165,11 +165,11 @@
                 "status": "正常"
             },
             {
-                "name": "苏晓河",
-                "link": "https://www.sxiaohe.top",
-                "avatar": "https://www.sxiaohe.top/img/avatar.avif",
+                "name": "莫言小筑",
+                "link": "https://www.myxz.top",
+                "avatar": "https://www.myxz.top/img/avatar.avif",
                 "descr": "随风飘起 如同浮云",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "青稚の空间",
@@ -180,7 +180,7 @@
             },
             {
                 "name": "Bleaz’s Blog",
-                "link": "https://blog.bleaz.net/",
+                "link": "https://blog.bleaz.net",
                 "avatar": "https://api.bleaz.top/img/links/logo.jpg",
                 "descr": "不畏过往，不惧将来。",
                 "status": "正常"
@@ -190,6 +190,13 @@
                 "link": "https://www.crosery.cn",
                 "avatar": "https://www.crosery.cn/img/face.webp",
                 "descr": "唯有那份炫目未曾忘却",
+                "status": "正常"
+            },
+            {
+                "name": "vegecaiBlog",
+                "link": "https://blog.vegecai.moe",
+                "avatar": "https://img.vegecai.moe/me.jpg",
+                "descr": "守岁花开，季季不同。",
                 "status": "正常"
             }
         ]
@@ -211,19 +218,6 @@
                 "avatar": "https://imgse.koxiuqiu.cc/imgse/u/19/2025/02/21/67b826a36b2d7.png",
                 "descr": "A Simple and Card UI Design theme for Hexo",
                 "status": "正常"
-            }
-        ]
-    },
-    {
-        "class_name": "友链异常区域",
-        "class_desc": "会手动检查",
-        "link_list": [
-            {
-                "name": "苏晓河",
-                "link": "https://www.sxiaohe.top",
-                "avatar": "https://www.sxiaohe.top/img/avatar.avif",
-                "descr": "随风飘起 如同浮云",
-                "status": "不可访问"
             }
         ]
     }
