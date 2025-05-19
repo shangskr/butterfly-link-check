@@ -162,7 +162,7 @@
                 "link": "https://i.bbb-lsy07.sbs",
                 "avatar": "https://i.bbb-lsy07.sbs/upload/quality_restoration_20250211145207618.JPG",
                 "descr": "科技激荡人文，洞见智慧本真。",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "莫言小筑",
@@ -176,7 +176,7 @@
                 "link": "https://blog.linux-qitong.top",
                 "avatar": "https://blog.linux-qitong.top/img/avatar.webp",
                 "descr": "越努力，越幸运.",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "Bleaz’s Blog",
@@ -233,10 +233,10 @@
         "class_desc": "会手动检查",
         "link_list": [
             {
-                "name": "青稚の空间",
-                "link": "https://blog.linux-qitong.top",
-                "avatar": "https://blog.linux-qitong.top/img/avatar.webp",
-                "descr": "越努力，越幸运.",
+                "name": "bbb-lsy07",
+                "link": "https://i.bbb-lsy07.sbs",
+                "avatar": "https://i.bbb-lsy07.sbs/upload/quality_restoration_20250211145207618.JPG",
+                "descr": "科技激荡人文，洞见智慧本真。",
                 "status": "不可访问"
             }
         ]
