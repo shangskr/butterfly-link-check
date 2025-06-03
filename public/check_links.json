@@ -36,14 +36,14 @@
                 "link": "https://ffbf.top",
                 "avatar": "https://ffbf.top/upload/logo3.jpeg",
                 "descr": "不服就是不服",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "落落のBlog",
                 "link": "https://www.whaleluo.top",
                 "avatar": "http://q.qlogo.cn/headimg_dl?dst_uin=2734184475&spec=640&img_type=jpg",
                 "descr": "于无常处知有情,于有情处知众生.",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "清羽飞扬",
@@ -162,7 +162,7 @@
                 "link": "https://i.bbb-lsy07.sbs",
                 "avatar": "https://i.bbb-lsy07.sbs/upload/quality_restoration_20250211145207618.JPG",
                 "descr": "科技激荡人文，洞见智慧本真。",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "莫言小筑",
@@ -233,10 +233,17 @@
         "class_desc": "会手动检查",
         "link_list": [
             {
-                "name": "bbb-lsy07",
-                "link": "https://i.bbb-lsy07.sbs",
-                "avatar": "https://i.bbb-lsy07.sbs/upload/quality_restoration_20250211145207618.JPG",
-                "descr": "科技激荡人文，洞见智慧本真。",
+                "name": "福福不服",
+                "link": "https://ffbf.top",
+                "avatar": "https://ffbf.top/upload/logo3.jpeg",
+                "descr": "不服就是不服",
+                "status": "不可访问"
+            },
+            {
+                "name": "落落のBlog",
+                "link": "https://www.whaleluo.top",
+                "avatar": "http://q.qlogo.cn/headimg_dl?dst_uin=2734184475&spec=640&img_type=jpg",
+                "descr": "于无常处知有情,于有情处知众生.",
                 "status": "不可访问"
             }
         ]
