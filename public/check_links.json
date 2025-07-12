@@ -71,7 +71,7 @@
                 "link": "https://blog.kfdzcoffee.cn",
                 "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
                 "descr": "所有奇迹的始发点",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "Adil",
@@ -92,7 +92,7 @@
                 "link": "https://solitude.200038.xyz",
                 "avatar": "https://serv.200038.xyz/2024/09/19/040857.webp",
                 "descr": "分享有趣但又无聊的东西。",
-                "status": "不可访问"
+                "status": "正常"
             },
             {
                 "name": "山岳库博",
@@ -201,10 +201,10 @@
             },
             {
                 "name": "sheerkvc",
-                "link": "https://sheerkvc.top",
-                "avatar": "https://sheerkvc.top/upload/sheerkvcgrey.webp",
+                "link": "https://blog.sheerkvc.top",
+                "avatar": "https://blog.sheerkvc.top/upload/sheerkvcgrey.webp",
                 "descr": "脱离低级趣味",
-                "status": "正常"
+                "status": "不可访问"
             }
         ]
     },
@@ -240,10 +240,17 @@
                 "status": "不可访问"
             },
             {
-                "name": "东方月初",
-                "link": "https://solitude.200038.xyz",
-                "avatar": "https://serv.200038.xyz/2024/09/19/040857.webp",
-                "descr": "分享有趣但又无聊的东西。",
+                "name": "咖啡豆子coffee的小站",
+                "link": "https://blog.kfdzcoffee.cn",
+                "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
+                "descr": "所有奇迹的始发点",
+                "status": "不可访问"
+            },
+            {
+                "name": "sheerkvc",
+                "link": "https://blog.sheerkvc.top",
+                "avatar": "https://blog.sheerkvc.top/upload/sheerkvcgrey.webp",
+                "descr": "脱离低级趣味",
                 "status": "不可访问"
             }
         ]
