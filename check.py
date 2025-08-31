@@ -102,6 +102,13 @@ output_data = []
 accessible_count = 0
 inaccessible_count = 0
 
+# 创建异常区
+error_section = {
+    'class_name': '友链异常区',
+    'class_desc': '会手动检测',
+    'link_list': []
+}
+
 print("\n生成检测结果...")
 for section in data:
     if 'link_list' in section:
@@ -122,16 +129,33 @@ for section in data:
                 else:
                     link_status = "不可访问"
                     inaccessible_count += 1
+                    # 将不可访问的链接添加到异常区
+                    error_section['link_list'].append({
+                        'name': item['name'],
+                        'link': item['link'],
+                        'avatar': item['avatar'],
+                        'descr': item['descr'],
+                        'status': link_status
+                    })
                 print(f"[最终状态] 链接: {item['link']} 状态: {link_status}")
             
-            section_data['link_list'].append({
-                'name': item['name'],
-                'link': item['link'],
-                'avatar': item['avatar'],
-                'descr': item['descr'],
-                'status': link_status
-            })
-        output_data.append(section_data)
+            # 只将正常链接添加到原分类
+            if link_status == "正常":
+                section_data['link_list'].append({
+                    'name': item['name'],
+                    'link': item['link'],
+                    'avatar': item['avatar'],
+                    'descr': item['descr'],
+                    'status': link_status
+                })
+        
+        # 只有当分类中还有正常链接时才保留该分类
+        if section_data['link_list']:
+            output_data.append(section_data)
+
+# 如果有不可访问的链接，添加异常区
+if error_section['link_list']:
+    output_data.append(error_section)
 
 with open(output_json_path, 'w', encoding='utf-8') as file:
     json.dump(output_data, file, ensure_ascii=False, indent=4)
