@@ -57,7 +57,7 @@
                 "link": "https://blog.dreamerstar.top",
                 "avatar": "https://jsd.nmmsl.top/gh/dreamerhe114514/baimgapi@main/image/tx.png",
                 "descr": "追梦小何，梦必追逐！一个无名小卒的个人博客",
-                "status": "正常"
+                "status": "不可访问"
             },
             {
                 "name": "Akilarの糖果屋",
@@ -251,6 +251,13 @@
                 "link": "https://www.whaleluo.top",
                 "avatar": "http://q.qlogo.cn/headimg_dl?dst_uin=2734184475&spec=640&img_type=jpg",
                 "descr": "于无常处知有情,于有情处知众生.",
+                "status": "不可访问"
+            },
+            {
+                "name": "小何",
+                "link": "https://blog.dreamerstar.top",
+                "avatar": "https://jsd.nmmsl.top/gh/dreamerhe114514/baimgapi@main/image/tx.png",
+                "descr": "追梦小何，梦必追逐！一个无名小卒的个人博客",
                 "status": "不可访问"
             }
         ]
