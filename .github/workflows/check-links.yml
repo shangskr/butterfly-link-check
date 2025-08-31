@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - '**/*'  # 监听所有文件的变化
+  schedule:
+    - cron: '0 0 */2 * *'  # 每两天UTC时间00:00运行一次
   workflow_dispatch:  # 支持手动触发
 
 jobs:
