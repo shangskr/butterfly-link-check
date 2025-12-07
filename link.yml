@@ -137,6 +137,10 @@
         link: https://blog.Ayeez.cn
         avatar: https://blog.ayeez.cn/imgs/photo.jpg
         descr: 记录学习历程，记录美好生活
+      - name: Nebula Blog
+        link: https://www.996icu.eu.org
+        avatar: https://img.scdn.io/i/692d847f79589_1764590719.webp
+        descr: Nebula.SYS
 - class_name: 特别推荐
   class_desc: 对我有用的博客及网站
   link_list:
