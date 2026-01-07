@@ -32,13 +32,6 @@
                 "status": "正常"
             },
             {
-                "name": "福福不服",
-                "link": "https://www.ffbf.top",
-                "avatar": "https://www.ffbf.top/upload/logo3.jpeg",
-                "descr": "不服就是不服",
-                "status": "正常"
-            },
-            {
                 "name": "清羽飞扬",
                 "link": "https://blog.liushen.fun",
                 "avatar": "https://blog.liushen.fun/info/avatar.ico",
@@ -253,6 +246,13 @@
         "class_name": "友链异常区",
         "class_desc": "会手动检测",
         "link_list": [
+            {
+                "name": "福福不服",
+                "link": "https://www.ffbf.top",
+                "avatar": "https://www.ffbf.top/upload/logo3.jpeg",
+                "descr": "不服就是不服",
+                "status": "不可访问"
+            },
             {
                 "name": "落落のBlog",
                 "link": "https://www.whaleluo.top",
