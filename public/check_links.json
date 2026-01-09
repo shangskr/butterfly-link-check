@@ -193,13 +193,6 @@
                 "status": "正常"
             },
             {
-                "name": "Avery’s Blog",
-                "link": "https://www.averyc.top",
-                "avatar": "https://www.averyc.top/images/image.jpg",
-                "descr": "透过窗户看星星",
-                "status": "正常"
-            },
-            {
                 "name": "mccsjs",
                 "link": "https://seln.cn",
                 "avatar": "https://seln.cn/img/head.jpg",
@@ -272,6 +265,13 @@
                 "link": "https://blog.sheerkvc.top",
                 "avatar": "https://blog.sheerkvc.top/upload/sheerkvcgrey.webp",
                 "descr": "脱离低级趣味",
+                "status": "不可访问"
+            },
+            {
+                "name": "Avery’s Blog",
+                "link": "https://www.averyc.top",
+                "avatar": "https://www.averyc.top/images/image.jpg",
+                "descr": "透过窗户看星星",
                 "status": "不可访问"
             }
         ]
