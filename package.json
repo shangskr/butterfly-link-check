@@ -1,0 +1,17 @@
+{
+  "name": "butterfly-link-check",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "js-yaml": "^4.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "next": "13.x",
+    "react": "18.x",
+    "react-dom": "18.x"
+  }
+}

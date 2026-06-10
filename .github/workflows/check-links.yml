@@ -1,0 +1,48 @@
+name: Check Links
+
+on:
+  push:
+    paths:
+      - 'link.yml'
+      - 'manual_check.json'
+      - 'check.py'
+      - '.github/workflows/check-links.yml'
+  schedule:
+    - cron: '0 0 */2 * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run link checker
+        run: python check.py
+        env:
+          CF_WORKER_URL: ${{ secrets.CF_WORKER_URL }}
+
+      - name: Set up Git config
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push if updated
+        run: |
+          git add public/check_links.json
+          git commit -m "chore: update check_links.json" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
