@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 
-export default function FileEditor({ fileName, content, sha, isLoading, onContentChange, onSave }) {
+export default function FileEditor({ fileName, content, isLoading, onContentChange, onSave }) {
   const contentRef = useRef(null)
+  const backdropRef = useRef(null)
   const [searchTerm, setSearchTerm] = useState('')
   const [searchResults, setSearchResults] = useState([])
   const [currentMatchIndex, setCurrentMatchIndex] = useState(0)
@@ -11,6 +12,21 @@ export default function FileEditor({ fileName, content, sha, isLoading, onConten
     onContentChange(e.target.value)
     setDirty(true)
   }, [onContentChange])
+
+  const scrollToMatch = useCallback((index) => {
+    const ta = contentRef.current
+    if (!ta) return
+    const lineHeight = parseFloat(window.getComputedStyle(ta).lineHeight) || 20
+    const lines = content.substring(0, index).split('\n').length
+    ta.scrollTop = Math.max(0, (lines - 1) * lineHeight - ta.clientHeight * 0.25)
+  }, [content])
+
+  const handleScroll = useCallback(() => {
+    if (backdropRef.current && contentRef.current) {
+      backdropRef.current.scrollTop = contentRef.current.scrollTop
+      backdropRef.current.scrollLeft = contentRef.current.scrollLeft
+    }
+  }, [])
 
   useEffect(() => {
     if (!searchTerm.trim()) {
@@ -26,24 +42,37 @@ export default function FileEditor({ fileName, content, sha, isLoading, onConten
     setSearchResults(matches)
     setCurrentMatchIndex(0)
     if (matches.length > 0) scrollToMatch(matches[0])
-  }, [searchTerm, content])
-
-  const scrollToMatch = (index) => {
-    if (!contentRef.current) return
-    const lines = content.substring(0, index).split('\n').length
-    const lineHeight = 20
-    const visibleLines = Math.floor(contentRef.current.clientHeight / lineHeight)
-    contentRef.current.scrollTo({
-      top: Math.max(0, (lines - visibleLines / 2) * lineHeight),
-      behavior: 'smooth',
-    })
-  }
+  }, [searchTerm, content, scrollToMatch])
 
   const navigateMatch = (dir) => {
     if (searchResults.length === 0) return
     const next = (currentMatchIndex + dir + searchResults.length) % searchResults.length
     setCurrentMatchIndex(next)
     scrollToMatch(searchResults[next])
+  }
+
+  function escapeHtml(text) {
+    return text
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+  }
+
+  function highlightContent(text, term, currentIndex) {
+    if (!term.trim()) return escapeHtml(text)
+    const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    const regex = new RegExp(`(${escapedTerm})`, 'gi')
+    const parts = text.split(regex)
+    let matchCount = 0
+    return parts.map((part, i) => {
+      if (i % 2 === 1) {
+        const isCurrent = matchCount === currentIndex
+        matchCount++
+        const cls = isCurrent ? 'highlight-mark current-match' : 'highlight-mark'
+        return `<mark class="${cls}">${escapeHtml(part)}</mark>`
+      }
+      return escapeHtml(part)
+    }).join('')
   }
 
   return (
@@ -91,13 +120,24 @@ export default function FileEditor({ fileName, content, sha, isLoading, onConten
       {isLoading ? (
         <div className="loading-screen">加载文件中...</div>
       ) : (
-        <textarea
-          ref={contentRef}
-          value={content}
-          onChange={handleChange}
-          spellCheck={false}
-          className="code-editor"
-        />
+        <div className="editor-wrapper">
+          <pre
+            ref={backdropRef}
+            className="editor-highlighter"
+            dangerouslySetInnerHTML={{
+              __html: highlightContent(content, searchTerm, currentMatchIndex)
+            }}
+            aria-hidden="true"
+          />
+          <textarea
+            ref={contentRef}
+            value={content}
+            onChange={handleChange}
+            onScroll={handleScroll}
+            spellCheck={false}
+            className="code-editor"
+          />
+        </div>
       )}
     </main>
   )

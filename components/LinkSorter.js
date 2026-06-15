@@ -219,7 +219,7 @@ export default function LinkSorter({ content, onChange, onSave, isLoading }) {
                           >
                             <div className="insert-line" />
                           </div>
-                          <div className={`link-sort-item${dragState && dragState.si === si && dragState.ii === ii ? ' dragging' : ''}`}>
+                          <div className="link-sort-item">
                             <div
                               className="drag-handle"
                               onPointerDown={e => handlePointerDown(e, si, ii)}
