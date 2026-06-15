@@ -46,6 +46,13 @@
                 "status": "正常"
             },
             {
+                "name": "Akilarの糖果屋",
+                "link": "https://akilar.top",
+                "avatar": "https://npm.elemecdn.com/akilar-friends@latest/avatar/akilar.top.jpg",
+                "descr": "欢迎光临糖果屋",
+                "status": "正常"
+            },
+            {
                 "name": "咖啡豆子coffee的小站",
                 "link": "https://blog.kfdzcoffee.cn",
                 "avatar": "https://images.kfdzcoffee.cn/i/1/avatar.png",
@@ -174,13 +181,6 @@
                 "link": "https://www.ffbf.top",
                 "avatar": "https://www.ffbf.top/upload/logo3.jpeg",
                 "descr": "不服就是不服",
-                "status": "不可访问"
-            },
-            {
-                "name": "Akilarの糖果屋",
-                "link": "https://akilar.top",
-                "avatar": "https://npm.elemecdn.com/akilar-friends@latest/avatar/akilar.top.jpg",
-                "descr": "欢迎光临糖果屋",
                 "status": "不可访问"
             },
             {
