@@ -1,106 +1,111 @@
 - class_name: 我的朋友们
   class_desc: 这是我的小伙伴~~
   link_list:
-      - name: 轻笑Chuckle
-        link: https://www.qcqx.cn
-        avatar: https://www.qcqx.cn/head.webp
-        descr: 漫天倾尘,风中轻笑
-      - name: Tianli
-        link: https://blog.tianli0.top
-        avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=507249007&spec=640
-        descr: 自知之明是最可贵的知识！
-      - name: 绘星里
-        link: https://blog.storia.ren
-        avatar: https://blog.storia.ren/images/icon.png
-        descr: 一起来绘制属于自己的星星！
-      - name: HiPeach
-        link: https://blog.opeach.cn
-        avatar: https://npm.elemecdn.com/opicture@1.0.0/main/avatar.webp
-        descr: 妙不可言
-      - name: 福福不服
-        link: https://www.ffbf.top
-        avatar: https://www.ffbf.top/upload/logo3.jpeg
-        descr: 不服就是不服
-      - name: 清羽飞扬
-        link: https://blog.liushen.fun
-        avatar: https://blog.liushen.fun/info/avatar.ico
-        descr: 柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜             
-      - name: 霞阴云之都
-        link: https://blog.20097747.xyz
-        avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=2224824262&spec=640
-        descr: 心茧化翼，破风追星！
-      - name: Akilarの糖果屋
-        link: https://akilar.top
-        avatar: https://npm.elemecdn.com/akilar-friends@latest/avatar/akilar.top.jpg
-        descr: 欢迎光临糖果屋
-      - name: 咖啡豆子coffee的小站
-        link: https://blog.kfdzcoffee.cn
-        avatar: https://images.kfdzcoffee.cn/i/1/avatar.png
-        descr: 所有奇迹的始发点
-      - name: Adil
-        link: https://blog.adil.com.cn
-        avatar: https://p.adil.com.cn/myself.jpg
-        descr: BW/HANA顾问,BI工程师,数据分析师,数据科学家。
-      - name: BiuXin 与光
-        link: https://blog.biuxin.com
-        avatar: https://x.xinb.de/i/2024/11/06/027080.gif
-        descr: 一个记录生活、分享心情与日常点滴的博客
-      - name: 张洪Heo
-        link: https://blog.zhheo.com
-        avatar: https://img.zhheo.com/i/67d8fa75943e4.webp
-        descr: 分享设计与科技生活
-      - name: Ariasakaの小窝
-        link: https://blog.yaria.top
-        avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=2192016328&spec=640
-        descr: 人有悲欢离合 月有阴晴圆缺
-      - name: 葱苓语畔
-        link: https://blog.ciraos.top
-        avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=1298926752&spec=640
-        descr: Don't worry, be happy.
-      - name: 朽丘秋雨
-        link: https://koxiuqiu.cn
-        avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=3531266512&spec=640
-        descr: 一定会和喜欢的人在夏日夜晚牵手慢步
-      - name: 栖童
-        link: https://blog.linux-qitong.top
-        avatar: https://blog.linux-qitong.top/img/avatar.webp
-        descr: 越努力，越幸运.
-      - name: Bleaz’s Blog
-        link: https://blog.bleaz.net
-        avatar: https://api.bleaz.top/img/links/logo.jpg
-        descr: 不畏过往，不惧将来。
-      - name: Crosery
-        link: https://www.crosery.cn
-        avatar: https://www.crosery.cn/img/face.webp
-        descr: 唯有那份炫目未曾忘却
-      - name: Lifeline
-        link: https://lifelinest.github.io
-        avatar: http://p2.music.126.net/x55FPD2xWTqmMIFjDKXogw==/109951163513084093.jpg?param=130y130
-        descr: 经世致用 自强不息
-      - name: AirTouch
-        link: https://www.xsl.im
-        avatar: https://www.xsl.im/avatar.webp
-        descr: Stay Hungry, Stay Foolish
-      - name: mccsjs
-        link: https://blog.seln.cn
-        avatar: https://blog.seln.cn/img/ico.jpg
-        descr: 点一盏灯，等一个迷路的夜🍁🍁🍁
-      - name: 阿叶Ayeez的小站
-        link: https://blog.Ayeez.cn
-        avatar: https://qiniu.ayeez.cn/avatar.jpg
-        descr: 记录学习历程，记录美好生活
-      - name: CcoMm
-        link: https://blog.ccomm.top
-        avatar: https://avatars.githubusercontent.com/u/147143261?s=200&v=4
-        descr: 這是C4的個人部落格網站
+    - name: 轻笑Chuckle
+      link: https://www.qcqx.cn
+      avatar: https://www.qcqx.cn/head.webp
+      descr: 漫天倾尘,风中轻笑
+    - name: Tianli
+      link: https://blog.tianli0.top
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=507249007&spec=640
+      descr: 自知之明是最可贵的知识！
+    - name: 绘星里
+      link: https://blog.storia.ren
+      avatar: https://blog.storia.ren/images/icon.png
+      descr: 一起来绘制属于自己的星星！
+    - name: HiPeach
+      link: https://blog.opeach.cn
+      avatar: https://npm.elemecdn.com/opicture@1.0.0/main/avatar.webp
+      descr: 妙不可言
+    - name: 福福不服
+      link: https://www.ffbf.top
+      avatar: https://www.ffbf.top/upload/logo3.jpeg
+      descr: 不服就是不服
+    - name: 清羽飞扬
+      link: https://blog.liushen.fun
+      avatar: https://blog.liushen.fun/info/avatar.ico
+      descr: 柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜
+    - name: 霞阴云之都
+      link: https://blog.20097747.xyz
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=2224824262&spec=640
+      descr: 心茧化翼，破风追星！
+    - name: Akilarの糖果屋
+      link: https://akilar.top
+      avatar: https://npm.elemecdn.com/akilar-friends@latest/avatar/akilar.top.jpg
+      descr: 欢迎光临糖果屋
+    - name: 咖啡豆子coffee的小站
+      link: https://blog.kfdzcoffee.cn
+      avatar: https://images.kfdzcoffee.cn/i/1/avatar.png
+      descr: 所有奇迹的始发点
+    - name: Adil
+      link: https://blog.adil.com.cn
+      avatar: https://p.adil.com.cn/myself.jpg
+      descr: BW/HANA顾问,BI工程师,数据分析师,数据科学家。
+    - name: BiuXin 与光
+      link: https://blog.biuxin.com
+      avatar: https://x.xinb.de/i/2024/11/06/027080.gif
+      descr: 一个记录生活、分享心情与日常点滴的博客
+    - name: 张洪Heo
+      link: https://blog.zhheo.com
+      avatar: https://img.zhheo.com/i/67d8fa75943e4.webp
+      descr: 分享设计与科技生活
+    - name: Ariasakaの小窝
+      link: https://blog.yaria.top
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=2192016328&spec=640
+      descr: 人有悲欢离合 月有阴晴圆缺
+    - name: 葱苓语畔
+      link: https://blog.ciraos.top
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=1298926752&spec=640
+      descr: Don't worry, be happy.
+    - name: 朽丘秋雨
+      link: https://koxiuqiu.cn
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=3531266512&spec=640
+      descr: 一定会和喜欢的人在夏日夜晚牵手慢步
+    - name: 栖童
+      link: https://blog.linux-qitong.top
+      avatar: https://blog.linux-qitong.top/img/avatar.webp
+      descr: 越努力，越幸运.
+    - name: Bleaz’s Blog
+      link: https://blog.bleaz.net
+      avatar: https://api.bleaz.top/img/links/logo.jpg
+      descr: 不畏过往，不惧将来。
+    - name: Crosery
+      link: https://www.crosery.cn
+      avatar: https://www.crosery.cn/img/face.webp
+      descr: 唯有那份炫目未曾忘却
+    - name: Lifeline
+      link: https://lifelinest.github.io
+      avatar: http://p2.music.126.net/x55FPD2xWTqmMIFjDKXogw==/109951163513084093.jpg?param=130y130
+      descr: 经世致用 自强不息
+    - name: AirTouch
+      link: https://www.xsl.im
+      avatar: https://www.xsl.im/avatar.webp
+      descr: Stay Hungry, Stay Foolish
+    - name: mccsjs
+      link: https://blog.seln.cn
+      avatar: https://blog.seln.cn/img/ico.jpg
+      descr: 点一盏灯，等一个迷路的夜🍁🍁🍁
+    - name: 阿叶Ayeez的小站
+      link: https://blog.Ayeez.cn
+      avatar: https://qiniu.ayeez.cn/avatar.jpg
+      descr: 记录学习历程，记录美好生活
+    - name: CcoMm
+      link: https://blog.ccomm.top
+      avatar: https://avatars.githubusercontent.com/u/147143261?s=200&v=4
+      descr: 這是C4的個人部落格網站
+    - name: 云灿の随笔小站
+      link: https://blog.yuncan.xyz/
+      avatar: https://yuncan.xyz/images/icon/favicon.ico
+      descr: 浮云一别后，流水十年间
+      siteshot: https://
 - class_name: 特别推荐
   class_desc: 对我有用的博客及网站
   link_list:
-      - name: Hexo
-        link: https://hexo.io
-        avatar: https://avatars.githubusercontent.com/u/6375567?s=200&v=4
-        descr: 快速、简单且强大的网站框架
-      - name: Butterfly
-        link: https://butterfly.js.org
-        avatar: https://butterfly.js.org/img/butterfly-icon.png
-        descr: A Simple and Card UI Design theme for Hexo
+    - name: Hexo
+      link: https://hexo.io
+      avatar: https://avatars.githubusercontent.com/u/6375567?s=200&v=4
+      descr: 快速、简单且强大的网站框架
+    - name: Butterfly
+      link: https://butterfly.js.org
+      avatar: https://butterfly.js.org/img/butterfly-icon.png
+      descr: A Simple and Card UI Design theme for Hexo
