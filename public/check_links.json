@@ -156,6 +156,13 @@
                 "avatar": "https://yuncan.xyz/images/icon/favicon.ico",
                 "descr": "浮云一别后，流水十年间",
                 "status": "正常"
+            },
+            {
+                "name": "Zemengzhou Space",
+                "link": "https://zemengzhou.com",
+                "avatar": "https://zemengzhou.com/images/portrait.webp",
+                "descr": "择梦舟的奇幻漂流",
+                "status": "正常"
             }
         ]
     },
