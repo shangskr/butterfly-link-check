@@ -102,6 +102,10 @@
       link: https://zemengzhou.com
       avatar: https://zemengzhou.com/images/portrait.webp
       descr: 择梦舟的奇幻漂流
+    - name: Modern Blog
+      link: https://blog.andyjin.website
+      avatar: https://filestorage0.oss-cn-hongkong.aliyuncs.com/avatar.png
+      descr: 分享技术，记录生活
 - class_name: 特别推荐
   class_desc: 对我有用的博客及网站
   link_list:
