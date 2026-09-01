@@ -18,6 +18,13 @@
                 "status": "正常"
             },
             {
+                "name": "绘星里",
+                "link": "https://blog.storia.ren",
+                "avatar": "https://blog.storia.ren/images/icon.png",
+                "descr": "一起来绘制属于自己的星星！",
+                "status": "正常"
+            },
+            {
                 "name": "HiPeach",
                 "link": "https://blog.opeach.cn",
                 "avatar": "https://npm.elemecdn.com/opicture@1.0.0/main/avatar.webp",
@@ -211,13 +218,6 @@
         "class_name": "友链异常区",
         "class_desc": "会手动检测",
         "link_list": [
-            {
-                "name": "绘星里",
-                "link": "https://blog.storia.ren",
-                "avatar": "https://blog.storia.ren/images/icon.png",
-                "descr": "一起来绘制属于自己的星星！",
-                "status": "不可访问"
-            },
             {
                 "name": "福福不服",
                 "link": "https://www.ffbf.top",
